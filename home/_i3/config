@@ -170,5 +170,5 @@ bar {
 # Start pidgin on it's own workspace:
 exec --no-startup-id i3-msg 'workspace im; exec pidgin; workspace 1'
 # Pidgin @username mention notifications:
-exec --no-startup-id python2 /home/ryan/git/i3-pidgin-notifier/notifier.py
+exec --no-startup-id python2 ~/.i3/pidgin-notifier.py
 exec --no-startup-id i3-msg 'workspace web; exec chromium; workspace 1'
