@@ -1,0 +1,8 @@
+# vol up
+"amixer -c 0 set Master 2dB+ unmute"
+    m:0x10 + c:123
+    Mod2 + XF86AudioRaiseVolume
+# vol dn
+"amixer -c 0 set Master 2dB-"
+    m:0x10 + c:122
+    Mod2 + XF86AudioLowerVolume
