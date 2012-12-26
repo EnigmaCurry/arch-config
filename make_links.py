@@ -7,6 +7,8 @@ def make_links():
     "Link all the files and directories in ./home to $HOME"
     for fn in os.listdir('home'):
         dst_fn = fn
+        if fn.endswith("~"):
+            continue
         if fn.startswith("_"):
             dst_fn = ".%s" % fn[1:]
         try:
